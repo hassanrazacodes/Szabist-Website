@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background: #ffffff;
+        }
+
+        header {
+            background: #232972;
+            height: 20vh;
+            width: 100%;
+        }
+
+        .logo {
+            margin-left: 6%;
+        }
+
+        nav {
+            margin-left: 6%;
+            margin-top: 20px;
+            width: 75%;
+        }
+
+        nav ol {
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px;
+            margin-bottom: 3px;
+        }
+
+        nav a:hover {
+            color: rgb(255, 149, 0);
+            text-decoration: underline 2px solid rgb(255, 149, 0);
+            ;
+        }
+
+        #title-top {
+            font-size: 19px !important;
+            text-align: center;
+            margin: 20px 0px 0px 0px;
+            color: #6a70aa;
+        }
+
+        #slider img {
+            width: 100%;
+            margin-top: 6px;
+        }
+
+        #highlights {
+            display: flex;
+            width: 100%;
+            height: 11vh;
+            background-color: rgb(247, 247, 247);
+        }
+
+        #high-img {
+            margin-left: 7%;
+        }
+
+        ul {
+            display: flex;
+            list-style: circle;
+            margin-top: 30px;
+        }
+
+        ul li {
+            padding-right: 150px;
+            color: #4b53a1;
+        }
+
+        #title-tops {
+            margin-top: 7%;
+            text-align: center;
+        }
+
+        #title-tops h1 {
+            font-size: 50px;
+            font-weight: 300;
+            margin-bottom: 60px;
+        }
+
+        #under {
+            height: 4px;
+            background-color: rgb(245, 139, 29);
+            width: 10%;
+            margin: auto;
+        }
+
+        #icons {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        #icons-top {
+            margin-top: 7%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 20%;
+
+        }
+
+        .titleicons {
+            font-weight: 500;
+            font-size: x-large;
+            padding-top: 10px;
+        }
+
+        .icons:hover {
+            opacity: 60%;
+        }
+
+        #para {
+            margin-top: 100px;
+            padding-top: 50px;
+            padding-left: 100px;
+            padding-bottom: 100px;
+            background-image: url(WhySzabistBackGround3.jpg);
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+
+        .para {
+            margin-top: 50px;
+            font-size: 60px;
+            font-weight: 300;
+            margin-bottom: 50px;
+            color: #707292;
+        }
+
+        .para2 {
+            width: 75%;
+            text-align: justify;
+            color: #000000;
+            padding-right: 200px;
+
+        }
+
+        .para3 {
+            margin-top: 20px;
+            text-align: justify;
+            color: #000000;
+            padding-right: 200px;
+            width: 75%;
+
+            padding-bottom: 50px;
+        }
+
+        .button-para {
+            text-decoration: none;
+            border: 2px solid;
+            border-radius: 20px;
+            color: #4b53a1;
+            padding: 9px 27px;
+            margin-left: 20px;
+            margin-top: 50px;
+        }
+
+        #footer {
+            margin-top: 50px;
+            height: 20vh;
+            background-color: #191f5b;
+        }
+
+        #footer ol {
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+            width: 40%;
+            padding-left: 200px;
+            padding-top: 30px;
+        }
+
+        #footer a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px;
+            margin-bottom: 3px;
+        }
+
+        #footer p {
+            color: #ffffff;
+            max-width: 60%;
+            margin-left: 14%;
+            margin-top: 13px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        @media only screen and (max-width: 750px) {
+            #icons-top {
+                width: 80%;
+            }
+
+            .para {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+
+            .para2 {
+                width: 100%;
+                padding-right: 20px;
+            }
+
+            .para3 {
+                width: 100%;
+                padding-right: 20px;
+            }
+            #logo{
+                text-align: center;
+            }
+            .logo {
+                width: 300px;
+                height: 100px;
+                padding-top: 20px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            #para {
+                padding-left: 30px;
+                padding-top: 20px;
+            }
+
+            #title-tops h1 {
+                font-size: 30px;
+            }
+
+            #high-img {
+                margin-left: 0;
+            }
+
+            .highlights {
+                width: 0px;
+            }
+
+            #footer ol {
+                display: none;
+            }
+
+            #footer p {
+                width: 80%;
+                max-width: 100%;
+                margin-left: 10%;
+                margin-top: 0px;
+                padding-top: 20px;
+            }
+        }
+
+        @media only screen and (min-width: 751px) and (max-width: 1150px) {
+            #icons-top {
+                width: 40%;
+            }
+
+            .para {
+                font-size: 40px;
+            }
+
+            .para2 {
+                width: 100%;
+                padding-right: 100px;
+            }
+
+            .para3 {
+                width: 100%;
+                padding-right: 100px;
+            }
+
+            #logo img {
+                text-align: center;
+            }
+
+            nav {
+                display: none;
+            }
+
+            #title-tops h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="szabistlogo.jpg" alt="" class="logo">
+        </div>
+        <nav>
+            <ol>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">ADMISSIONS</a></li>
+                <li><a href="">SCHOLARSHIPS</a></li>
+                <li><a href="">ACADEMICS</a></li>
+                <li><a href="">RESEARCH</a></li>
+                <li><a href="">DEGREE VERIFICATION</a></li>
+                <li><a href="">CAMPUS LIFE</a></li>
+            </ol>
+        </nav>
+    </header>
+    <div id="title-top">
+        <p>Application Submission Procedure</p>
+    </div>
+    <div id="slider">
+        <div id="slider-img">
+            <img src="Slider-08.jpg" alt="" class="slider">
+        </div>
+    </div>
+    <div id="highlights">
+        <div id="high-img">
+            <img src="Highlights.jpg" alt="" class="highlights">
+        </div>
+        <div id="title">
+            <marquee behavior="" direction="">
+                <ul>
+                    <li>Orientation Ceremony SPRING 2024</li>
+                    <li>SZABIST Hyderabad 11th Convocation</li>
+                    <li>Ceremony SPRING 2024 Commence</li>
+                </ul>
+            </marquee>
+        </div>
+    </div>
+    <div id="title-tops">
+        <h1>
+            SZABIST STUDENT LINKS
+        </h1>
+        <div id="under"></div>
+    </div>
+    <div id="icons">
+        <div id="icons-top">
+            <img src="news&update.png" alt="" class="icons">
+            <p class="titleicons">NEWS & UPDATES</p>
+            <p class="icons-p">Find News And Updates</p>
+        </div>
+        <div id="icons-top">
+            <img src="news&update.png" alt="" class="icons">
+            <p class="titleicons">NEWS & UPDATES</p>
+            <p class="icons-p">Find News And Updates</p>
+        </div>
+        <div id="icons-top">
+            <img src="news&update.png" alt="" class="icons">
+            <p class="titleicons">NEWS & UPDATES</p>
+            <p class="icons-p">Find News And Updates</p>
+        </div>
+        <div id="icons-top">
+            <img src="news&update.png" alt="" class="icons">
+            <p class="titleicons">NEWS & UPDATES</p>
+            <p class="icons-p">Find News And Updates</p>
+        </div>
+    </div>
+    <div id="icons">
+        <div id="icons-top">
+            <img src="news&update.png" alt="" class="icons">
+            <p class="titleicons">NEWS & UPDATES</p>
+            <p class="icons-p">Find News And Updates</p>
+        </div>
+        <div id="icons-top">
+            <img src="news&update.png" alt="" class="icons">
+            <p class="titleicons">NEWS & UPDATES</p>
+            <p class="icons-p">Find News And Updates</p>
+        </div>
+        <div id="icons-top">
+            <img src="news&update.png" alt="" class="icons">
+            <p class="titleicons">NEWS & UPDATES</p>
+            <p class="icons-p">Find News And Updates</p>
+        </div>
+        <div id="icons-top">
+            <img src="news&update.png" alt="" class="icons">
+            <p class="titleicons">NEWS & UPDATES</p>
+            <p class="icons-p">Find News And Updates</p>
+        </div>
+    </div>
+    <div id="para">
+        <h1 class="para">
+            WHY SZABIST ?
+        </h1>
+        <p class="para2">
+            The Shaheed Zulfikar Ali Bhutto Institute of Science and Technology (SZABIST) is a fully Chartered Institute
+            established through a Legislative Act of the Sindh Assembly (Sindh Act No. XI of 1995) and is approved and
+            recognized by the Higher Education Commission (HEC), Pakistan, as a degree awarding institution.
+        </p>
+        <p class="para3">
+            SZABIST has campuses in Karachi, Islamabad, Hyderabad, Larkana, Gharo and one in Dubai (UAE). SZABIST has
+            the unparalleled honor of being the only Pakistani Institute to be recognized internationally by Business
+            Week, Asia week, Asia Inc. and CNN.
+        </p>
+        <div id="apply">
+            <a href="" class="button-para">Apply Now</a>
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <ol>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">ADMISSIONS</a></li>
+                <li><a href="">SCHOLARSHIPS</a></li>
+                <li><a href="">ACADEMICS</a></li>
+            </ol>
+            <p class="footer">
+                <span> ADDRESS:</span> Ground, 2nd, 3rd, 4th & 8th Floor, State Life Building, Thandi Sarak, Hyderabad,
+                Sindh, Pakistan, Tel:(92-22) 2782442-3, 2730027-8, Fax:(92-22) 2782444, Email:info@hyd.szabist.edu.pk
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
